@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Google Clone</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body onload="document.getElementById('search').focus()">
+    <div id="background">
+        <img id="bce" src="./Images/wallpapersden.com_kame-house-dragon-ball-z_3032x1706.jpg">
+    </div>
+    <div class="behindsh">
+        <img id="menushadow" src="./Images/dfti6ex-95df56f9-5435-46de-ab55-ff6bd1fc6511-ezgif.com-crop.gif" alt="sonic saying no" onclick="playAudio('audio')" >
+    </div>
+    <div class="behind" >
+        <img class="sonic" id="menusonic" src="./Images/dg8r5vx-eca13087-928c-48ee-a739-14309349ce26.gif" alt="sonic saying no" onclick="playAudio('audio2')" >
+    </div>
+    <div class="logog" >
+        <img id="ilogo" src="./Images/82e1edd7-9318-4fac-99cc-72e22a010b2c.png" alt="Google"/>
+    </div>
+    <input type="text" id="search" class="search-box" placeholder="Search..." onkeypress="handleKeyPress(event)">
+    <div class="buttons">
+        <button class="btn" onclick="searchGoogle()">Google Search</button>
+        <button class="btn" onclick="redirectCustom()">Custom Redirect</button>
+    </div>
+
+
+    <div id="row">
+        <div class="eme-container" >
+            <a href="https://mail.google.com/mail/u/0/?ogbl#inbox"> <img class="eme" src="./Images/Blueemerald.gif"> </a> 
+            <span class="hover-tab">Gmail</span>
+        </div>
+        <div class="eme-container" onclick="openPopup('popup1')" >
+            <img class="eme" src="./Images/greenemerald.gif">
+            <span class="hover-tab">Google Workspace</span>
+        </div>
+        <div class="eme-container" onclick="openPopup('popup2')" >
+            <img class="eme" src="./Images/lightblueemerald.gif">
+            <span class="hover-tab">Piracy</span>
+        </div>
+        <div class="eme-container">
+            <img class="eme" src="./Images/White emerald.gif" onclick="openPopup('popup3')">
+            <span class="hover-tab">White Emerald</span>
+        </div>
+        <div class="eme-container">
+            <img class="eme" src="./Images/purpleemerald.gif" onclick="openPopup('popup4')">
+            <span class="hover-tab">Light Blue Emerald</span>
+        </div>
+        <div class="eme-container">
+            <img class="eme" src="./Images/yellowemerald.gif" onclick="openPopup('popup5')">
+            <span class="hover-tab">Yellow Emerald</span>
+        </div>
+        <div class="eme-container">
+            <img class="eme" src="./Images/redemerald.gif" onclick="openPopup('popup6')">
+            <span class="hover-tab">Red Emerald</span>
+        </div>
+        
+        <!-- Popups -->
+        <div id="popup1" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup('popup1')">&times;</span>
+                <h3 class="workspace" >Google Workspace</h3>
+                <img class="shws" src="./Images/dfu2usb-e600fb5d-288d-4549-8fc0-859a09c2902f-ezgif.com-crop (1).gif">
+                <a href="https://drive.google.com/drive/u/0/home">  <img src="./Images/Google images/7089491_drive_google_icon.png"></a>
+                <a href="https://www.google.com/maps">  <img src="./Images/Google images/7089161_google_maps_icon.png "></a><br>
+                <a href="https://photos.google.com/">  <img src="./Images/Google images/7089340_google_photos_icon.png "></a>
+                <a href="https://www.youtube.com/"> <img src="./Images/Google images/317714_video_youtube_icon.png "><br></a>
+                <a href="https://calendar.google.com/calendar/u/0/r"> <img src="./Images/Google images/7089162_google_calendar_icon.png "></a>
+                <a href="https://earth.google.com/web/@-26.49708574,-91.53027824,-4968.96039572a,8911820.53131223d,57.41597999y,59.56565827h,0t,0r/data=CgRCAggBOgMKATBCAggBSg0I____________ARAA"><img src="./Images/Google images/4202004_earth_google_googleearth_logo_social_icon.png "></a> <br>
+                <a href="https://classroom.google.com/"> <img src="./Images/Google images/Google_Classroom_Logo.png"></a>
+                <a href="https://docs.google.com/document/u/0/"> <img src="./Images/Google images/2993697_brand_brands_docs_google_logo_icon.png "></a><br>
+                <a href="https://docs.google.com/spreadsheets/u/0/"><img src="./Images/Google images/2993659_brand_brands_google_logo_logos_icon.png "></a>
+                <a href="https://docs.google.com/presentation/u/0/"><img src="./Images/Google images/2993687_brand_brands_google_logo_logos_icon.png"></a>
+            </div>
+        </div>
+
+        <div id="popup2" class="popup">
+            <div class="popup-content2">
+                <span class="close-btn" onclick="closePopup('popup2')">&times;</span>
+                <h3 class="piracy">Piracy</h3>
+                <img class="sws" src="./Images/dfu2usb-e600fb5d-288d-4549-8fc0-859a09c2902f-ezgif.com-crop (2).gif">
+                <a href="https://brocoflix.com/"> <img src="./Images/Piracy/pngimg.com - broccoli_PNG72873.png "></a>
+                <a href="https://4anime.gg/"><img src="./Images/Piracy/4animelogo.png"></a><br>
+                <a href="https://mangafire.to/home"><img src="./Images/Piracy/manga fire logo.png"></a>
+                <a href="https://ytmp3hub.com/"><img src="./Images/Piracy/ytmp3.svg"></a><br>
+                <a href="https://z-library.sk/"><img src="./Images/Piracy/logo.zlibrary.svg"></a>
+                <a href="https://app.plex.tv/desktop/#!/"><img src="./Images/Piracy/Plex.png"></a>
+            </div>
+        </div>
+
+        <div id="popup3" class="popup">
+            <div class="popup-content3">
+                <span class="close-btn" onclick="closePopup('popup3')">&times;</span>
+                <h3 class="pend" >Under Construction...</h3>
+                <img src="./Images/df6ywcl-c78b7028-2dda-42a8-9606-a44c2a7adc47.gif">
+            </div>
+        </div>
+
+        <div id="popup4" class="popup">
+            <div class="popup-content4">
+                <span class="close-btn" onclick="closePopup('popup4')">&times;</span>
+                <h3 class="pend" >Under Construction...</h3>
+                <img src="./Images/amy.gif">
+            </div>
+        </div>
+
+        <div id="popup5" class="popup">
+            <div class="popup-content5">
+                <span class="close-btn" onclick="closePopup('popup5')">&times;</span>
+                <h3 class="pend" >Under Construction...</h3>
+                <img class="tails" src="./Images/tails.gif">
+            </div>
+        </div>
+
+        <div id="popup6" class="popup">
+            <div class="popup-content6">
+                <span class="close-btn" onclick="closePopup('popup6')">&times;</span>
+                <h3 class="pend" >Under Construction...</h3>
+                <img class="tails" src="./Images/knuckles.gif">
+            </div>
+        </div>
+
+    <audio id="audio" src="./audio/im-the-worlds-ultimate-life-form-101soundboards.mp3" preload="auto"></audio>
+    <audio id="audio2" src="./audio/im-sonic-sonic-the-hedgehog-101soundboards.mp3" preload="auto"></audio>
+    <script>
+        function searchGoogle() {
+            let query = document.getElementById("search").value;
+            if (query) {
+                window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(query);
+            }
+        }
+        
+        function redirectCustom() {
+            window.location.href = "https://www.google.com/imghp?hl=en&authuser=0&ogbl" ; // Change this to your preferred site
+        }
+        
+        function handleKeyPress(event) {
+            if (event.key === "Enter") {
+                searchGoogle();
+            }
+        }
+
+        function playAudio(audioId) {
+            let audio = document.getElementById(audioId);
+
+            // Stop any other playing audio
+            let allAudios = document.querySelectorAll("audio");
+            allAudios.forEach(a => {
+                if (a !== audio) {
+                    a.pause();
+                    a.currentTime = 0;
+                }
+            });
+
+            // Play or restart the selected audio
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.currentTime = 0;
+                audio.play();
+            }
+        }
+        function openPopup(popupId) {
+    // Ensure all popups are hidden before opening a new one
+    let allPopups = document.querySelectorAll(".popup");
+    allPopups.forEach(popup => popup.style.display = "none");
+
+    // Open the selected popup
+    document.getElementById(popupId).style.display = "flex";
+}
+
+function closePopup(popupId) {
+    document.getElementById(popupId).style.display = "none";
+}
+
+// Ensure popups stay closed when the page refreshes
+window.onload = function() {
+    let allPopups = document.querySelectorAll(".popup");
+    allPopups.forEach(popup => popup.style.display = "none");
+};
+
+
+    </script>
+</body>
+</html>
